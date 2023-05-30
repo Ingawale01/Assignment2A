@@ -1,0 +1,44 @@
+angular :registration,login ->npm --version
+npm install -g @angular/cli
+ng new project_name  ->#write code ->ng serve
+
+#app.component.html
+<h1>{{title}}</h1>
+
+<input type="text" #name placeholder="Enter Name:" name="Name"><br>
+<input type="text" #address placeholder="Enter Address:" name="Address"><br>
+<input type="text" #contact placeholder="Enter Contact No:" name="Contact"><br>
+<input type="email" #email placeholder="Enter Email ID:" name="Email"><br>
+<input type="password" #password placeholder="Enter Password:" name="Password"><br>
+
+<button (click)="getvalue(name.value, address.value, contact.value, email.value)">Register</button>
+
+<h3>Registration Form</h3>
+<p>Name:{{displayname}}</p>
+<p>Address:{{displayaddress}}</p>
+<p>Contact:{{displaycontact}}</p>
+<p>Email:{{displayemail}}</p>
+
+
+#app.component.css
+
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  title = 'Registration Form';
+  displayname="";
+  displayaddress="";
+  displaycontact="";
+  displayemail="";
+
+  getvalue(name:string, address:string, contact:string, email:string){
+    this.displayname=name;
+    this.displayaddress=address;
+    this.displaycontact=contact;
+    this.displayemail=email;
+  }
+}
