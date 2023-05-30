@@ -1,0 +1,219 @@
+Index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" 
+href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Load an icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+ <title>Dashboard</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+<header>
+ <div class="logosec">
+ <div class="logo">Bharati Vidhyapeeth</div>
+ <img src="menu.png" class="icn" id="menuicn" alt="menu">
+ </div>
+ <div class="searchbar">
+ <input type="text" placeholder="search">
+ <button onclick="myFunction()">Search</button> 
+ </div>
+ <div class="message">
+ <div class="notfn">
+ <img src="notification.png" alt="pqr">
+ </div>
+ <div class="dp">
+ <img src="user.png" alt="xyz">
+ </div>
+ </div>
+</header>
+<div class="main-containner">
+ <div class="navcontainer">
+ <nav class="nav">
+ <div class="nav-upper-options">
+ <div class="nav-option option1">
+ <img src="dashboard.png" class="nav-img" alt="Dashboad">
+ <h3>Dashboard</h3>
+ </div>
+ <div class="nav-option option2">
+ <img src="professor.png" class="nav-img" alt="Home">
+ <h3>Professors</h3>
+ </div>
+ <div class="nav-option option3">
+ <img src="Student.png" class="nav-img" alt="">
+ <select name="links" size="1" onchange="window.location.href=this.value">
+ <option>Students</option>
+ <option value="http://127.0.0.1:5500/form.html" >Students Login</option>
+ <option value="Two">Regular Student</option>
+ <option value="Three">Distance Learner</option>
+ </select>
+ </div>
+ <div class="nav-option option3">
+ <img src="Branches.png" class="nav-img" alt="">
+ <h3>Branches</h3>
+ </div>
+ <div class="nav-option option3">
+ <img src="Timetable.png" class="nav-img" alt="">
+ <h3>Timetable</h3>
+ </div>
+ <div class="nav-option option4">
+ <img src="logout.png" class="nav-img" alt="Log Out">
+ <h3>Logout </h3>
+ </div>
+ </div>
+ </nav>
+ </div>
+ <div class="box-container">
+ <div class="box box1">
+ <div class="text">
+ <h2 class="topic">Students</h2>
+ <h2 class="topic-heading">45k</h2>
+ </div>
+ <img src="stud.jpg">
+ </div>
+ <div class="box box2">
+ <div class="text">
+ <h2 class="topic">Professors</h2>
+ <h2 class="topic-heading">15k</h2>
+ </div>
+ <img src="Prof.jpg">
+ </div> 
+ <div class="box box3">
+ <div class="text">
+ <h2 class="topic">Branches</h2>
+ <h2 class="topic-heading">15</h2>
+ </div> 
+ <img src="branch.png">
+ </div>
+</div>
+</div>
+</body>
+</html>
+Style.css
+header{
+ height: 70px;
+ width: 100vw;
+ position: fixed;
+ display:flex;
+ box-shadow: 1px 1px 15px rgba(1, 3, 10, 0.825);
+ z-index: 100;
+ background-color:burlywood;
+ align-items: center;
+ justify-content: space-between;
+}
+/*SPPU*/
+.logo{
+ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ font-size: 28px;
+ color: black;
+ display: inline;
+ padding-left: 20px; 
+}
+/*Menu*/
+.icn{
+ height: 30px;
+ cursor: pointer;
+ display: inline;
+ padding-left: 20px;
+}
+/*searchbar*/
+.searchbar{
+ height: 30px;
+ margin-left: 400px;
+ display: inline;
+}
+/*message*/
+.notfn{
+ display: inline;
+ cursor: pointer;
+ padding-right: 50px;
+ background-size: 20px;
+}
+.dp{
+ display: inline;
+ cursor: pointer;
+ padding-right: 40px;
+}
+/*sidebar*/
+.main-containner{
+ display: flex;
+ z-index: 1;
+ background-color:rgb(157, 157, 113);
+}
+.navcontainer{
+ margin-top: 75px;
+ height: 550px;
+ width: 250px;
+ display: flex;
+ padding-top: 30px;
+ box-sizing: initial;
+ background-color: rgb(238, 201, 151);
+ box-shadow: 1px 1px 15px rgba(1, 4, 16, 0.825); 
+}
+.nav-option{
+ height:auto;
+ width: 30px;
+ display:flex;
+ cursor: pointer;
+ align-items:baseline;
+ gap: 30px 0 30px;
+ padding: 20px;
+}
+.nav-img{
+ height: 30px;
+}
+.h3{
+ color: black; 
+}
+.nav-upper-option{
+ box-shadow: 1px 1px 15px rgba(1, 3, 10, 0.825);
+ font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.report-container { 
+ display: block;
+ max-height: 150px;
+ max-width: 500px;
+ background-color: rgb(26, 25, 23);
+ border-radius: 30px;
+ box-shadow: 3px 3px 10px rgb(33, 32, 32);}
+.box {
+ height: 130px;
+ width: 250px;
+ border-radius: 20px;
+ box-shadow: 3px 3px 10px rgba(0, 30, 87, 0.751);
+ padding: 70px;
+ margin-top: 100px;
+ margin-left: 30px;
+ display: inline-flex;
+ align-items: center;
+ justify-content: space-between;
+ cursor: pointer;
+ transition: transform 0.3s ease-in-out;
+}
+ .box:nth-child(1) {
+ background-color: aliceblue;
+ }
+ .box:nth-child(2) {
+ background-color: aliceblue;
+ }
+ .box:nth-child(3) {
+ background-color: aliceblue;
+ } 
+ .box img {
+ height: 50px;
+ }
+ .box .text {
+ color: rgb(6, 6, 6);
+ }
