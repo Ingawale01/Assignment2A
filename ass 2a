@@ -1,0 +1,17 @@
+Name:Vaishnavi Ingawale
+Class: TEIT
+Roll No.: 3327
+Subject: Web Application Development 
+
+mkdir ----
+cd ----
+git --version
+git init
+git add file.txt
+git stsus
+git remote add origin
+git congig --global user.email ""
+git congig --global user.name ""
+git commit -m "committed"
+git status
+git push -u origin master
