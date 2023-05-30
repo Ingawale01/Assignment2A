@@ -1,0 +1,130 @@
+make index.html
+html:5 enter
+add cdn link 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="homepage">
+
+        <div data-role="header" data-theme="b">
+            <h1>Simple Mobile Website</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="Register.html">Login/Register</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <center>
+                <div class="row">
+                    <img src="pic1.jpg" height="200px" width="200px">
+                    <img src="pic1.jpg" height="200px" width="200px">
+                </div>
+    
+            </center>
+        </div>
+
+        <div data-role="footer"   data-theme="b">
+            <center>
+                <div class="quicklinks">
+                    <center>
+                        <h3>QuiK Links</h3>
+                    </center>
+                    <ul>
+                        <a href="Home.html">Home</a><br>
+                        <a href="About_us.html">About us</a><br>
+                        <a href="Contact_us.html">Contact Us</a><br>
+                        <a href="Register.html">Login/Register</a><br>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+    </div>
+    
+</body>
+</html>
+
+
+register.html
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    <div data-role="page" id="homepage">
+
+        <div data-role="header" data-theme="b">
+            <h1>Simple Mobile Website</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="Register.html">Login/Register</a></li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <label>Full Name:</label>
+            <input type="text"><br>  
+            <label>Email:</label>
+            <input type="email"><br> 
+            <label>Password:</label>
+            <input type="password"><br> 
+            <label>confirm Password:</label>
+            <input type="password"><br>
+            
+            <input type="submit" value="Register" ><br>
+            <a href="Login.html">Already registered->go to Login</a><br> 
+            
+
+          </div>
+
+        <div data-role="footer"  data-theme="b">
+            <center>
+                <div class="quicklinks">
+                        <h3>QuiK Links</h3>
+                    <ul>
+                        
+                        <a href="Home.html">Home</a><br>
+                        <a href="About_us.html">About us</a><br>
+                        <a href="Contact_us.html">Contact Us</a><br>
+                        <a href="Register.html">Login/Register</a><br>
+                    </ul>
+                </div>
+            </center>
+        </div>
+
+    </div>
+    
+</body>
+</html>
