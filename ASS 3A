@@ -1,0 +1,18 @@
+npm init 
+yes 
+npm i express --save
+#make folder public-> index.html
+
+make index.js and write below code in that
+<!--
+    const express=require('express');
+    const app=express();
+    app.use(express.static('public'));
+    app.listen(3000, ()=>{
+        console.log("Application is Started");
+    })
+    -->
+
+node index.js
+localhost:3000
+
